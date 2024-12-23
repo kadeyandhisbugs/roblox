@@ -24,7 +24,7 @@ local ConfigurationExtension = ".rfld"
 
 local RayfieldLibrary = {
 	Flags = {},
-	Theme = {
+	Theme = { 
 		Light = {
 			TextColor = Color3.fromRGB(40, 40, 40), -- Darker text for readability on light background
 
