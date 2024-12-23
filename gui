@@ -27,16 +27,17 @@ local RayfieldLibrary = {
 	Theme = {
 		Default = {
 			TextColor = Color3.fromRGB(0, 0, 0),
-			Background = Color3.fromRGB(44, 44, 44),
-			Topbar = Color3.fromRGB(44, 44, 44),
+
+			Background = Color3.fromRGB(46, 242, 0),
+			Topbar = Color3.fromRGB(208, 0, 0),
 			Shadow = Color3.fromRGB(0, 0, 0),
 
 			NotificationBackground = Color3.fromRGB(0, 0, 0),
 			NotificationActionsBackground = Color3.fromRGB(0, 0, 0),
 
-			Background = Color3.fromRGB(44, 44, 44),,
+			TabBackground = Color3.fromRGB(224, 0, 0),
 			TabStroke = Color3.fromRGB(46, 242, 0),
-			Background = Color3.fromRGB(44, 44, 44),,
+			TabBackgroundSelected = Color3.fromRGB(224, 0, 0),
 			TabTextColor = Color3.fromRGB(0, 0, 0),
 			SelectedTabTextColor = Color3.fromRGB(0, 0, 0),
 
@@ -276,7 +277,7 @@ local Debounce = false
 local searchOpen = false
 local Notifications = Rayfield.Notifications
 
-local SelectedTheme = RayfieldLibrary.Theme.Defaule
+local SelectedTheme = RayfieldLibrary.Theme.Darkblue
 
 local function ChangeTheme(ThemeName)
 	SelectedTheme = RayfieldLibrary.Theme[ThemeName]
