@@ -2586,7 +2586,7 @@ function RayfieldLibrary:LoadConfiguration()
 	end
 end
 
-Rayfield.Main.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Rayfield.Main.BackgroundColor3 = Color3.fromRGB(42, 42, 42) 
 
 if useStudio then
 	-- run w/ studio
