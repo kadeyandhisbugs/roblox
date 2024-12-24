@@ -342,6 +342,7 @@ local PrincessAnim_Button = Instance.new("TextButton")
 local CowboyAnim_Button = Instance.new("TextButton")
 local PatrolAnim_Button = Instance.new("TextButton")
 local ZombieFEAnim_Button = Instance.new("TextButton")
+local CatWalkGlamAnim_Button = Instance.new("TextButton")
 --NEWS
 local Misc_Section = Instance.new("ScrollingFrame")
 local AntiFling_Button = Instance.new("TextButton")
