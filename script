@@ -1363,10 +1363,11 @@ Animations_Section.BackgroundTransparency = 1.000
 Animations_Section.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Animations_Section.BorderSizePixel = 0
 Animations_Section.Position = UDim2.new(0, 105, 0, 30)
-Animations_Section.Size = UDim2.new(0, 395, 0, 320)
+Animations_Section.Size = UDim2.new(0, 395, 0, 500) 
 Animations_Section.Visible = false
-Animations_Section.CanvasSize = UDim2.new(0, 0, 1.6, 0)
-Animations_Section.ScrollBarThickness = 5
+Animations_Section.CanvasSize = UDim2.new(0, 0, 2.5, 0)
+Animations_Section.ScrollingDirection = Enum.ScrollingDirection.Y
+Animations_Section.ScrollBarThickness = 10
 
 VampireAnim_Button.Name = "VampireAnim_Button"
 VampireAnim_Button.Parent = Animations_Section
