@@ -3327,13 +3327,13 @@ CatWalkGlamAnim_Button.MouseButton1Click:Connect(function()
 	local Animate = plr.Character.Animate
 	Animate.Disabled = true
 	StopAnim()
-  Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=133806214992291"
-  Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=94970088341563"
-  Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=109168724482748"
-  Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=81024476153754"
-  Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=116936326516985"
-  Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=119377220967554"
-  Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=92294537340807"
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=133806214992291"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=94970088341563"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=109168724482748"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=81024476153754"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=116936326516985"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=119377220967554"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=92294537340807"
 	plr.Character.Humanoid:ChangeState(3)
 	Animate.Disabled = false
 end)
