@@ -343,6 +343,11 @@ local CowboyAnim_Button = Instance.new("TextButton")
 local PatrolAnim_Button = Instance.new("TextButton")
 local ZombieFEAnim_Button = Instance.new("TextButton")
 local CatWalkGlamAnim_Button = Instance.new("TextButton")
+local WickedPopularAnim_Button = Instance.new("TextButton")
+local adidasAnim_Button = Instance.new("TextButton")
+local NFLAnim_Button = Instance.new("TextButton")
+local BoldAnim_Button = Instance.new("TextButton")
+
 --NEWS
 local Misc_Section = Instance.new("ScrollingFrame")
 local AntiFling_Button = Instance.new("TextButton")
@@ -1693,11 +1698,65 @@ CatWalkGlamAnim_Button.TextScaled = true
 CatWalkGlamAnim_Button.TextSize = 14.000
 CatWalkGlamAnim_Button.TextWrapped = true
 
+WickedPopularAnim_Button.Name = "WickedPopularAnim_Button"
+WickedPopularAnim_Button.Parent = Animations_Section
+WickedPopularAnim_Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+WickedPopularAnim_Button.BackgroundTransparency = 0.500
+WickedPopularAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WickedPopularAnim_Button.BorderSizePixel = 0
+WickedPopularAnim_Button.Position = UDim2.new(0, 25, 0, 575)
+WickedPopularAnim_Button.Size = UDim2.new(0, 150, 0, 30)
+WickedPopularAnim_Button.Font = Enum.Font.Oswald
+WickedPopularAnim_Button.Text = "Wicked Popular"
+WickedPopularAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+WickedPopularAnim_Button.TextScaled = true
+WickedPopularAnim_Button.TextSize = 14.000
+WickedPopularAnim_Button.TextWrapped = true
 
+adidasAnim_Button.Name = "adidasAnim_Button"
+adidasAnim_Button.Parent = Animations_Section
+adidasAnim_Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+adidasAnim_Button.BackgroundTransparency = 0.500
+adidasAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+adidasAnim_Button.BorderSizePixel = 0
+adidasAnim_Button.Position = UDim2.new(0, 210, 0, 575)
+adidasAnim_Button.Size = UDim2.new(0, 150, 0, 30)
+adidasAnim_Button.Font = Enum.Font.Oswald
+adidasAnim_Button.Text = "Adidas"
+adidasAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+adidasAnim_Button.TextScaled = true
+adidasAnim_Button.TextSize = 14.000
+adidasAnim_Button.TextWrapped = true
 
+NFLAnim_Button.Name = "NFLAnim_Button"
+NFLAnim_Button.Parent = Animations_Section
+NFLAnim_Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+NFLAnim_Button.BackgroundTransparency = 0.500
+NFLAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NFLAnim_Button.BorderSizePixel = 0
+NFLAnim_Button.Position = UDim2.new(0, 25, 0, 625)
+NFLAnim_Button.Size = UDim2.new(0, 150, 0, 30)
+NFLAnim_Button.Font = Enum.Font.Oswald
+NFLAnim_Button.Text = "NFL"
+NFLAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+NFLAnim_Button.TextScaled = true
+NFLAnim_Button.TextSize = 14.000
+NFLAnim_Button.TextWrapped = true
 
-
-
+BoldAnim_Button.Name = "BoldAnim_Button"
+BoldAnim_Button.Parent = Animations_Section
+BoldAnim_Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+BoldAnim_Button.BackgroundTransparency = 0.500
+BoldAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BoldAnim_Button.BorderSizePixel = 0
+BoldAnim_Button.Position = UDim2.new(0, 10, 0, 625)
+BoldAnim_Button.Size = UDim2.new(0, 210, 0, 30)
+BoldAnim_Button.Font = Enum.Font.Oswald
+BoldAnim_Button.Text = "Bold"
+BoldAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+BoldAnim_Button.TextScaled = true
+BoldAnim_Button.TextSize = 14.000
+BoldAnim_Button.TextWrapped = true
 
 Misc_Section.Name = "Misc_Section"
 Misc_Section.Parent = Background
@@ -2133,6 +2192,10 @@ CreateClicker(CowboyAnim_Button)
 CreateClicker(PatrolAnim_Button)
 CreateClicker(ZombieFEAnim_Button)
 CreateClicker(CatWalkGlamAnim_Button)
+CreateClicker(WickedPopularAnim_Button)
+CreateClicker(adidasAnim_Button)
+CreateClicker(NFLAnim_Button)
+CreateClicker(BoldAnim_Button)
 
 CreateToggle(AntiFling_Button)
 CreateToggle(AntiChatSpy_Button)
@@ -3335,6 +3398,67 @@ CatWalkGlamAnim_Button.MouseButton1Click:Connect(function()
 	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=116936326516985"
 	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=119377220967554"
 	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=92294537340807"
+	plr.Character.Humanoid:ChangeState(3)
+	Animate.Disabled = false
+end)
+
+WickedPopularAnim_Button.MouseButton1Click:Connect(function()
+	local Animate = plr.Character.Animate
+	Animate.Disabled = true
+	StopAnim()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=118832222982049"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=76049494037641"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=92072849924640"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=72301599441680"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=104325245285198"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=131326830509784"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=121152442762481"
+	plr.Character.Humanoid:ChangeState(3)
+	Animate.Disabled = false
+end)
+
+adidasAnim_Button.MouseButton1Click:Connect(function()
+	local Animate = plr.Character.Animate
+	Animate.Disabled = true
+	StopAnim()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=18537376492"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=18537371272"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=18537392113"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=18537384940"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=18537380791"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=18537363391"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=18537367238"
+	plr.Character.Humanoid:ChangeState(3)
+	Animate.Disabled = false
+end)
+
+NFLAnim_Button.MouseButton1Click:Connect(function()
+	local Animate = plr.Character.Animate
+	Animate.Disabled = true
+	StopAnim()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=92080889861410"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=74451233229259"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=110358958299415"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=117333533048078"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=119846112151352"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=134630013742019"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=129773241321032"
+	plr.Character.Humanoid:ChangeState(3)
+	Animate.Disabled = false
+end)
+
+
+BoldAnim_Button.MouseButton1Click:Connect(function()
+	local Animate = plr.Character.Animate
+	Animate.Disabled = true
+	StopAnim()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=16738333868"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=16738334710"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=16738340646"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=16738337225"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=16738336650"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=16738332169"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=16738333171"
 	plr.Character.Humanoid:ChangeState(3)
 	Animate.Disabled = false
 end)
