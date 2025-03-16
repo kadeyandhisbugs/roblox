@@ -349,6 +349,7 @@ local NFLAnim_Button = Instance.new("TextButton")
 local BoldAnim_Button = Instance.new("TextButton")
 local RobotAnim_Button = Instance.new("TextButton")
 local BubblyAnim_Button = Instance.new("TextButton")
+local StylizedAnim_Button = Instance.new("TextButton")
 
 --NEWS
 local Misc_Section = Instance.new("ScrollingFrame")
@@ -1791,6 +1792,20 @@ BubblyAnim_Button.TextScaled = true
 BubblyAnim_Button.TextSize = 14.000
 BubblyAnim_Button.TextWrapped = true
 
+StylizedAnim_Button.Name = "StylizedAnim_Button"
+StylizedAnim_Button.Parent = Animations_Section
+StylizedAnim_Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+StylizedAnim_Button.BackgroundTransparency = 0.500
+StylizedAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StylizedAnim_Button.BorderSizePixel = 0
+StylizedAnim_Button.Position = UDim2.new(0, 210, 0, 625)
+StylizedAnim_Button.Size = UDim2.new(0, 210, 0, 30)
+StylizedAnim_Button.Font = Enum.Font.Oswald
+StylizedAnim_Button.Text = "Stylized"
+StylizedAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+StylizedAnim_Button.TextScaled = true
+StylizedAnim_Button.TextSize = 14.000
+StylizedAnim_Button.TextWrapped = true
 
 
 Misc_Section.Name = "Misc_Section"
@@ -2233,6 +2248,7 @@ CreateClicker(NFLAnim_Button)
 CreateClicker(BoldAnim_Button)
 CreateClicker(RobotAnim_Button)
 CreateClicker(BubblyAnim_Button)
+CreateClicker(StylizedAnim_Button)
 
 CreateToggle(AntiFling_Button)
 CreateToggle(AntiChatSpy_Button)
@@ -3536,6 +3552,22 @@ BubblyAnim_Button.MouseButton1Click:Connect(function()
 	Animate.Disabled = false
 end)
 
+StylizedAnim_Button.MouseButton1Click:Connect(function()
+	local Animate = plr.Character.Animate
+	Animate.Disabled = true
+	StopAnim()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=4708191566"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=4708192150"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=4708193840"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=4708192705"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=4708188025"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=4708184253"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=4708186162"
+	Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=4708189360"
+	Animate.swim.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=4708190607"
+	plr.Character.Humanoid:ChangeState(3)
+	Animate.Disabled = false
+end)
 
 --MISC
 
