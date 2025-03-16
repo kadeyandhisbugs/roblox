@@ -1770,7 +1770,7 @@ RobotAnim_Button.BackgroundTransparency = 0.500
 RobotAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 RobotAnim_Button.BorderSizePixel = 0
 RobotAnim_Button.Position = UDim2.new(0, 25, 0, 675)
-RobotAnim_Button.Size = UDim2.new(0, 210, 0, 30)
+RobotAnim_Button.Size = UDim2.new(0, 150, 0, 30)
 RobotAnim_Button.Font = Enum.Font.Oswald
 RobotAnim_Button.Text = "Robot"
 RobotAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -1785,7 +1785,7 @@ BubblyAnim_Button.BackgroundTransparency = 0.500
 BubblyAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 BubblyAnim_Button.BorderSizePixel = 0
 BubblyAnim_Button.Position = UDim2.new(0, 25, 0, 725)
-BubblyAnim_Button.Size = UDim2.new(0, 210, 0, 30)
+BubblyAnim_Button.Size = UDim2.new(0, 150, 0, 30)
 BubblyAnim_Button.Font = Enum.Font.Oswald
 BubblyAnim_Button.Text = "Bubbly"
 BubblyAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -1800,9 +1800,9 @@ StylizedAnim_Button.BackgroundTransparency = 0.500
 StylizedAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 StylizedAnim_Button.BorderSizePixel = 0
 StylizedAnim_Button.Position = UDim2.new(0, 210, 0, 675)
-StylizedAnim_Button.Size = UDim2.new(0, 210, 0, 30)
+StylizedAnim_Button.Size = UDim2.new(0, 150, 0, 30)
 StylizedAnim_Button.Font = Enum.Font.Oswald
-StylizedAnim_Button.Text = "Stylized"
+StylizedAnim_Button.Text = "Custom"
 StylizedAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 StylizedAnim_Button.TextScaled = true
 StylizedAnim_Button.TextSize = 14.000
@@ -1815,7 +1815,7 @@ NoBoundariesAnim_Button.BackgroundTransparency = 0.500
 NoBoundariesAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 NoBoundariesAnim_Button.BorderSizePixel = 0
 NoBoundariesAnim_Button.Position = UDim2.new(0, 210, 0, 725)
-NoBoundariesAnim_Button.Size = UDim2.new(0, 210, 0, 30)
+NoBoundariesAnim_Button.Size = UDim2.new(0, 150, 0, 30)
 NoBoundariesAnim_Button.Font = Enum.Font.Oswald
 NoBoundariesAnim_Button.Text = "No Boundaries"
 NoBoundariesAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -3573,13 +3573,13 @@ StylizedAnim_Button.MouseButton1Click:Connect(function()
 	local Animate = plr.Character.Animate
 	Animate.Disabled = true
 	StopAnim()
-	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=4708191566"
-	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=4708192150"
-	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=4708193840"
-	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=4708192705"
-	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=4708188025"
-	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=4708184253"
-	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=4708186162"
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=18747067405"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=18747063918"
+	Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1014421541"
+	Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1014401683"
+	Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1014394726"
+	Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1014380606"
+	Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1014384571"
 	Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=4708189360"
 	Animate.swim.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=4708190607"
 	plr.Character.Humanoid:ChangeState(3)
