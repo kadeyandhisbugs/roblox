@@ -350,6 +350,7 @@ local BoldAnim_Button = Instance.new("TextButton")
 local RobotAnim_Button = Instance.new("TextButton")
 local BubblyAnim_Button = Instance.new("TextButton")
 local StylizedAnim_Button = Instance.new("TextButton")
+local NoBoundariesAnim_Button = Instance.new("TextButton")
 
 --NEWS
 local Misc_Section = Instance.new("ScrollingFrame")
@@ -1807,6 +1808,21 @@ StylizedAnim_Button.TextScaled = true
 StylizedAnim_Button.TextSize = 14.000
 StylizedAnim_Button.TextWrapped = true
 
+NoBoundariesAnim_Button.Name = "NoBoundariesAnim_Button"
+NoBoundariesAnim_Button.Parent = Animations_Section
+NoBoundariesAnim_Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+NoBoundariesAnim_Button.BackgroundTransparency = 0.500
+NoBoundariesAnim_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoBoundariesAnim_Button.BorderSizePixel = 0
+NoBoundariesAnim_Button.Position = UDim2.new(0, 210, 0, 625)
+NoBoundariesAnim_Button.Size = UDim2.new(0, 210, 0, 30)
+NoBoundariesAnim_Button.Font = Enum.Font.Oswald
+NoBoundariesAnim_Button.Text = "No Boundaries"
+NoBoundariesAnim_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoBoundariesAnim_Button.TextScaled = true
+NoBoundariesAnim_Button.TextSize = 14.000
+NoBoundariesAnim_Button.TextWrapped = true
+
 
 Misc_Section.Name = "Misc_Section"
 Misc_Section.Parent = Background
@@ -2249,6 +2265,7 @@ CreateClicker(BoldAnim_Button)
 CreateClicker(RobotAnim_Button)
 CreateClicker(BubblyAnim_Button)
 CreateClicker(StylizedAnim_Button)
+CreateClicker(NoBoundariesAnim_Button)
 
 CreateToggle(AntiFling_Button)
 CreateToggle(AntiChatSpy_Button)
@@ -3566,6 +3583,21 @@ StylizedAnim_Button.MouseButton1Click:Connect(function()
 	Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=4708189360"
 	Animate.swim.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=4708190607"
 	plr.Character.Humanoid:ChangeState(3)
+	Animate.Disabled = false
+end)
+
+NoBoundariesAnim_Button.MouseButton1Click:Connect(function()
+	local Animate = plr.Character.Animate
+	Animate.Disabled = true
+	StopAnim()
+	Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=18747067405"
+	Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=18747063918"
+	Animate.walk:FindFirstChildOfClass("Animation").AnimationId = "http://www.roblox.com/asset/?id=18747074203"
+	Animate.run:FindFirstChildOfClass("Animation").AnimationId = "http://www.roblox.com/asset/?id=18747070484"
+	Animate.jump:FindFirstChildOfClass("Animation").AnimationId = "http://www.roblox.com/asset/?id=18747069148"
+	Animate.climb:FindFirstChildOfClass("Animation").AnimationId = "http://www.roblox.com/asset/?id=18747060903"
+	Animate.fall:FindFirstChildOfClass("Animation").AnimationId = "http://www.roblox.com/asset/?id=18747062535"
+	task.wait()
 	Animate.Disabled = false
 end)
 
